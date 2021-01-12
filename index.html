@@ -66,6 +66,7 @@
                     <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</br></h1>
                 </div>
                 <button class="modal-button" type="button" data-modal-open >Заказать услугу</button>
+               
             </div>
         </section>
 
@@ -419,8 +420,31 @@
                 <svg class="modal-btn-icon">
                     <use href="./images/sprite.svg#icon-close-btn"> </use>
                 </svg>
-
             </button>
+            
+            <form action="#" class="modal-form">
+                <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+                <lable class="modal-form-fild">
+                    Имя
+                    <input type="text" name="user-name"  class="modal-form-input">
+                </lable>
+                <lable class="modal-form-fild">
+                    Телефон
+                    <input type="tel" name="user-tel" class="modal-form-input">
+                </lable>
+                <lable  class="modal-form-fild">
+                    Почта
+                    <input type="email" name="user-email" class="modal-form-input">
+                </lable>
+                <lable class="modal-form-fild">
+                    Комментарий
+                    <textarea name="user-message"></textarea>
+                </lable>
+                <input type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy">
+                <lable class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю
+                <a href="#">Условия договора</a></lable>
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
             
         </div>
     </div>
