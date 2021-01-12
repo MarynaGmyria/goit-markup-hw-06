@@ -426,22 +426,40 @@
                 <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
                 <lable class="modal-form-fild">
                     Имя
-                    <input type="text" name="user-name"  class="modal-form-input">
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user-name" class="modal-form-input">
+                        <svg class="modal-form-icon">
+                            <use href="./images/sprite.svg#icon-name"></use>
+                        </svg>
+                    </span>   
                 </lable>
+
                 <lable class="modal-form-fild">
                     Телефон
-                    <input type="tel" name="user-tel" class="modal-form-input">
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user-tel" class="modal-form-input">
+                        <svg class="modal-form-icon">
+                            <use href="./images/sprite.svg#icon-phone-black"></use>
+                        </svg>
+                    </span>
                 </lable>
+
                 <lable  class="modal-form-fild">
                     Почта
-                    <input type="email" name="user-email" class="modal-form-input">
+                    <span class="modal-form-input-wrapper">
+                        <input type="email" name="user-email" class="modal-form-input">
+                        <svg class="modal-form-icon">
+                            <use href="./images/sprite.svg#icon-email-black"></use>
+                        </svg>
+                    </span> 
                 </lable>
+
                 <lable class="modal-form-fild">
                     Комментарий
-                    <textarea name="user-message"></textarea>
+                    <textarea class="modal-form-massage" name="user-message" placeholder="Введите текст" ></textarea>
                 </lable>
-                <input type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy">
-                <lable class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю
+                <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy">
+                <lable for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю
                 <a href="#">Условия договора</a></lable>
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
