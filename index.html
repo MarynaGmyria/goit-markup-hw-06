@@ -412,6 +412,27 @@
                 </ul>
             </div>            
         </div>
+
+        <div class="footer-form-section">
+            <form action="#" class="subscription-form">
+                <label for="subscription-mail" class="subscription-form-field footer-title" name="subscription-mail">
+                    подпишитесь на рассылку</label>
+            
+                <div class="subscription-form-input-wrapper">
+                    <input type="email" name="email" class="subscription-form-input" placeholder="E-mail" id="subscription-mail">
+                    <button type="submit" class="subscription-form-btn button">Подписаться
+                        <svg class="subscription-form-btn-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        
+
+
+        
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -458,11 +479,13 @@
                     Комментарий
                     <textarea class="modal-form-massage" name="user-message" placeholder="Введите текст" ></textarea>
                 </lable>
-                <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy">
-                <lable for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю
-                <a href="#">Условия договора</a></lable>
-                <button type="submit" class="modal-form-btn">Отправить</button>
+                <input class="modal-form-policy visually-hidden" type="checkbox" name="user_policy" value="accept-policy" id="user-policy">
+                <label class="modal-form-policy-text"
+                    for="user-policy">Соглашаюсь с рассылкой и принимаю&nbsp; <a class="modal-form-policy-link" href="#"> Условия договора</a></label>
+                <button type="submit" class="modal-form-btn modal-button">Отправить</button>
+                
             </form>
+            
             
         </div>
     </div>
