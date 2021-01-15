@@ -730,6 +730,33 @@ img {
   font-size: 14px;
   font-weight: 700;
 }
+.footer-form-section {
+  margin-left: 93px;
+}
+
+.subscription-form-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.subscription-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-form-btn-icon {
+  margin-left: 10px;
+}
 
 /* ============= END FOOTER ===============*/
 
@@ -797,7 +824,20 @@ img {
   fill: var(--accent-color);
 }
 
+.modal-form-input:focus + .modal-form-icon-name {
+  fill: var(--accent-color);
+}
+
+.modal-btn-icon {
+  width: 18px;
+  height: 18px;
+}
+
 .close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -807,11 +847,17 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon {
-  width: 18px;
-  height: 18px;
+.close-btn:hover,
+.close-btn:focus {
+  background-color: #fff;
+}
+
+.close-btn:hover .modal-btn-icon,
+.close-btn:focus .modal-btn-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-icon {
@@ -822,6 +868,17 @@ img {
   display: block;
   width: 18px;
   height: 18px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-icon-name {
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  position: absolute;
+  display: block;
+  width: 13px;
+  height: 13px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -882,6 +939,9 @@ img {
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: var(--accent-color);
   border: var(--accent-color);
+  background-image: url(../images/for-sprite/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .modal-form-policy-text {
@@ -910,10 +970,6 @@ img {
 }
 
 /* ============= END  BACKDROP ===============*/
-
-.subscription-form-field {
-  display: block;
-}
 
 .subscription-form-input-wrapper {
   display: flex;
