@@ -4,6 +4,8 @@
   --secondary-font: 'Raleway', sans-serif;
   --accent-text-color: #212121;
   --main-text-color: #757575;
+  --white-text-color: #ffffff;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -144,7 +146,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .menu-link-studio,
@@ -156,7 +158,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .current::after {
@@ -185,7 +187,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .header-mail {
@@ -197,7 +199,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .header-mail:hover,
@@ -274,7 +276,7 @@ img {
   line-height: 1.875;
   letter-spacing: 0.06em;
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-text-color);
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
@@ -343,7 +345,7 @@ img {
   font-size: 14px;
 
   background-color: rgba(47, 48, 58, 0.8);
-  color: #fff;
+  color: var(--white-text-color);
 }
 
 .about-list-item {
@@ -401,7 +403,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: #fff;
+  background-color: var(--white-text-color);
 }
 
 .team {
@@ -439,9 +441,9 @@ img {
   height: 44px;
   border-radius: 50%;
 
-  background-color: #fff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--white-text-color);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 
 .social-list-link:hover,
@@ -451,7 +453,7 @@ img {
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: #fff;
+  fill: var(--white-text-color);
 }
 
 .social-list-icon {
@@ -484,8 +486,8 @@ img {
   border: solid #afb1b8 1px;
   border-radius: 4px;
   color: #afb1b8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 
 .client-item-icon {
@@ -495,14 +497,14 @@ img {
 
 .client-item-link:hover,
 .client-item-link:focus {
-  background-color: #fff;
+  background-color: var(--white-text-color);
   border-color: var(--accent-color);
 }
 
 .client-item-link:hover .client-item-icon,
 .client-item-link:focus .client-item-icon {
   fill: var(--accent-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--timing-function);
 }
 
 /* ============ END CLIENTS ============*/
@@ -533,15 +535,14 @@ img {
   line-height: 1.625;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .button-list-item:hover,
 .button-list-item:focus {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -616,13 +617,13 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  color: #fff;
+  color: var(--white-text-color);
   padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
 
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--timing-function);
   transform: translateY(100%);
 }
 
@@ -647,7 +648,7 @@ img {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text-color);
   text-decoration: none;
   display: inline-block;
   margin-bottom: 20px;
@@ -662,7 +663,7 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text-color);
   text-decoration: none;
 }
 
@@ -693,15 +694,15 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #fff;
+  color: var(--white-text-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 200ms var(--timing-function);
 }
 
 .footer-social-icon {
   width: 20px;
   height: 20px;
-  fill: #fff;
+  fill: var(--white-text-color);
 }
 
 .footer-social-link:hover,
@@ -711,7 +712,7 @@ img {
 
 .footer-social-link:hover .footer-social-icon,
 .footer-social-link:focus .footer-social-icon {
-  fill: #fff;
+  fill: var(--white-text-color);
 }
 
 .footer-social-item:not(:last-child) {
@@ -726,7 +727,7 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   margin-top: 6px;
-  color: #fff;
+  color: var(--white-text-color);
   font-size: 14px;
   font-weight: 700;
 }
@@ -762,6 +763,10 @@ img {
   margin-left: 10px;
 }
 
+.subscription-form-input-wrapper {
+  display: flex;
+}
+
 /* ============= END FOOTER ===============*/
 
 /* ============= BACKDROP ===============*/
@@ -784,7 +789,7 @@ img {
 
   width: 528px;
   min-height: 581px;
-  background-color: #fff;
+  background-color: var(--white-text-color);
   padding: 40px;
 }
 
@@ -815,7 +820,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--timing-function);
   cursor: pointer;
 }
 
@@ -847,16 +852,16 @@ img {
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: #fff;
+  background-color: var(--white-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--timing-function);
 }
 
 .close-btn:hover,
 .close-btn:focus {
-  background-color: #fff;
+  background-color: var(--white-text-color);
 }
 
 .close-btn:hover .modal-btn-icon,
@@ -872,7 +877,7 @@ img {
   display: block;
   width: 18px;
   height: 18px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--timing-function);
 }
 
 .modal-form-icon-name {
@@ -883,7 +888,7 @@ img {
   display: block;
   width: 13px;
   height: 13px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--timing-function);
 }
 
 .modal-form-fild {
@@ -910,7 +915,7 @@ img {
   padding: 12px 16px;
   margin-top: 4px;
   resize: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--timing-function);
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
@@ -925,7 +930,7 @@ img {
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: var(--accent-color);
-  border: px solid #ffff;
+  border: px solid var(--white-text-color);
 }
 
 .modal-form-policy-text::before {
@@ -936,8 +941,8 @@ img {
   content: '';
   border-radius: 2px;
   margin-right: 7px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
 }
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
@@ -974,7 +979,3 @@ img {
 }
 
 /* ============= END  BACKDROP ===============*/
-
-.subscription-form-input-wrapper {
-  display: flex;
-}
